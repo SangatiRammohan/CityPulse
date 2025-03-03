@@ -1,0 +1,129 @@
+
+
+.mainsection {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .populartour h3 {
+    font-size: 22px;
+    color: #ff5733;
+    margin-bottom: 5px;
+  }
+  
+  .populartour h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .populartour .line {
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #ff5733;
+    margin: 10px auto;
+  }
+  
+  .populartour h5 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  
+  .tourCarousel {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .tourCards {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .tourCards:hover {
+    transform: scale(1.05);
+  }
+  
+
+  .tourCards img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  
+  .tourCards h3 {
+    font-size: 18px;
+    color: #ff5733;
+    margin-top: 10px;
+  }
+  
+  /* Tour Details */
+  .tourdetails {
+    padding: 15px;
+  }
+  
+  .tourdetails h1 {
+    font-size: 24px;
+   color: #454545;;
+    margin-bottom: 10px;
+  }
+  
+  .tourdetails p {
+    font-size: 16px;
+   color: #454545;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  /* Tour Time Details */
+  .tourtime {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color:white;
+  }
+  
+  .tourdays {
+    background: #ff5733;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .slick-prev,
+  .slick-next {
+    font-size: 24px;
+    color: #ff5733;
+    z-index: 10;
+  }
+  
+  .slick-dots li button:before {
+    color: #ff5733;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .tourtime {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .tourdays {
+      margin-bottom: 5px;
+    }
+  }
+  

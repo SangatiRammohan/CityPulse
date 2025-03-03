@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hero{
+    height: 95vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-image: url(../../../public/HeroAssests/bg3.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.heropart1{
+    width: 550px;
+   display: grid;
+   gap: 30px;
+   line-height: 2;
+    p{
+        font-weight:800;
+        font-size: larger;
+    }
+    h1{
+    color: #546289; 
+    font-weight:900;
+    }
+    h1 span{
+        color: #173bca;
+    }
+    h2{
+        color: #33588f;
+    }
+}
+.heropart2{
+    width: 500px;
+}
+.heropart2 img{
+    width: 600px;
+}
+.explorebtns{
+    display: flex;
+    gap: 20px;
+}
+.explorebtns button{
+    width: 200px;
+    padding: 10px;
+}

@@ -1,0 +1,153 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header 1 - Main Navigation */
+  .header1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    background-color: aqua;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .logo img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  /* Navigation Links */
+  .navlinks ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  .navlinks ul li {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  /* Header 2 - Contact Info & Signup */
+  .header2 {
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .contactlinks {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-size: 14px;
+  }
+  
+  .signupdetails {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .signupdetails button {
+    width: 100px;
+    padding: 8px;
+    border: none;
+    background-color: rgb(93, 93, 191);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Hamburger Menu for Mobile */
+  .menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navlinks {
+      position: absolute;
+      top: 85px;
+      left: 0;
+      width: 100%;
+      background-color: aqua;
+      flex-direction: column;
+      text-align: center;
+      transform: translateY(-150%);
+      transition: transform 0.3s ease-in-out;
+    }
+  .header1{
+    justify-content: space-between;
+  }
+    .navlinks.open {
+      transform: translateY(0);
+    }
+  
+    .navlinks ul {
+      flex-direction: column;
+      gap: 15px;
+      padding: 20px 0;
+    }
+  
+    .menu-toggle {
+      display: block;
+      z-index: 10;
+    }
+  
+    /* Adjust Contact Info */
+    .links {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  
+    .contactlinks {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo img {
+      width: 40px;
+    }
+  
+    .navlinks ul li {
+      font-size: 14px;
+    }
+  
+    .signupdetails button {
+      width: 80px;
+      padding: 6px;
+    }
+  }
+  
